@@ -50,7 +50,7 @@ public class Anagram
 
         for(char ch : map1.keySet())
         {
-            if(!map2.containsKey(ch)&&!(map2.get(ch)==map1.get(ch)))
+            if(!map2.containsKey(ch)||!(map2.get(ch)==map1.get(ch)))
             {
                 return false;
             }
